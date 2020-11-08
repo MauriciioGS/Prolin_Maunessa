@@ -21,6 +21,7 @@ RESET="\e[0m"
 PURPURA="\e[1;45m"
 BLUE="\e[4;44m"
 REDBK="\e[4;41m"
+LIGHTPURPLE="\e[1;105m"
 
 user=""
 password=""
@@ -104,9 +105,9 @@ mtch_line=`echo "$line" | grep -c "$hash"`
 # SI ESE NUMERO DE COINCIDENCIAS ES 1 ENTONCES, LA CONTRASEÑA ES CORRECTA, DE LO CONTRARIO INFORMA DE CREDENCIALES INCORRECTAS	
 if [ "$mtch_line" -eq 1 ]; then
 	clear
-	printf "\t\t\t**********----Bienvenido a la PROLIN ----**********\n"
-	printf "\t\t**--Con el comando \"ayuda\" se muestran las opciones de comando disponibles--**\n"
-	printf "\t\t\t       **--Para salir ingrese \"salir\" --**\n"
+	printf "\t\t\t$PURPURA**********----Bienvenido a la PROLIN MAUNESSA----**********$RESET\n"
+	printf "\t\t$PURPURA**--Con el comando \"ayuda\" se muestran las opciones de comando disponibles--**$RESET\n"
+	printf "\t\t\t$PURPURA       **--Para salir ingrese \"salir\" --**$RESET\n"
 	true=1
   	while [[ $true -eq 1 ]]; do
 	read -p "$(echo -e "$BOLD$PURPURA$user:$BOLD$PURPURA$PWD$RESET"$ "" )" command
@@ -184,7 +185,7 @@ if [ "$mtch_line" -eq 1 ]; then
 
 		'creditos')
 			#FALTA COLOR DE VANESSA
-			printf "\t$REDBK DESARROLLADORES: $RESET\n\t\t *--Vanessa Magin Gomez--*\n\t\t$BLUE *--Héctor Mauricio Garcia Serrano--* $RESET\n\t$REDBK Fecha de finalizacion: 8 Noviembre de 2020\n$RESET\n"
+			printf "\t$REDBK DESARROLLADORES: $RESET\n\t\t$LIGHTPURPLE *--Vanessa Magin Gomez--*\n\t\t$BLUE *--Héctor Mauricio Garcia Serrano--* $RESET\n\t$REDBK Fecha de finalizacion: 8 Noviembre de 2020\n$RESET\n"
 		;;
 
 		'ahorcado')
