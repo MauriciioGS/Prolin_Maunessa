@@ -1,0 +1,103 @@
+Objetivo:
+El presente proyecto pretende que demuestren lo aprendido durante el
+curso que recientemente se les impartió, así como también su capacidad de
+investigación, creatividad e inventiva propia. Para el desarrollo de este
+proyecto necesitarán conocimiento sólidos del sistema operativo GNU/Linux,
+del manejo de archivos y sobre conocimientos de Shell Scripting.
+
+Especificaciones:
+El proyecto consiste en desarrollar una terminal de trabajo “PROLIN ______”. Su
+programa deberá proporcionar al usuario una interfaz eficaz para manejar
+archivos, teclear distintos comandos, consultar información del sistema,
+reproducir música y jugar distintos juegos programados por ustedes. Esta
+terminal debe contener:
+
+Un sistema de acceso (logueo) para los usuarios: al ejecutar su
+programa debe mostrar una pantalla que permita a los usuarios
+actuales del sistema operativo anfitrión acceder o loguearse a su
+terminal. Se debe pedir el nombre de usuario y contraseña, y sólo con
+la combinación correcta se permitirá el acceso. Dichos usuarios y
+contraseñas deben de existir en el sistema operativo anfitrión, no es
+válido que algún usuario real del sistema no se pueda loguear a su
+terminal.
+• La interacción con el usuario será por medio de una línea de prompt
+(intérprete de comandos). Esta línea de prompt puede mostrar la
+información que quieran y lucir como ustedes gusten, pero debe de
+mostrar al menos el nombre del usuario activo y la carpeta en la que
+están trabajando actualmente. Esta terminal deberá interpretar los
+comandos que ustedes vayan a programar (especificados en los
+siguientes puntos) y también los del sistema operativo anfitrión,
+teniendo como prioridad, obviamente, los suyos. La única manera de
+salir de esta terminal es escribiendo el comando “salir”. No podrá
+salirse de la terminal presionando ctrl+c ó ctrl+z.
+
+Se requiere que se programen los siguientes comandos:
+➔ Comando “árbol”: simula la salida del comando tree, es decir,
+muestra de manera gráfica la jerarquía de un directorio que
+ustedes le especificaron al comando. Si al comando no se le
+especifica directorio, el comando se ejecuta sobre el directorio
+actual.
+➔ Se necesita implementar un comando “ayuda” que dé al
+usuario información acerca de los comandos que ustedes
+mismos hayan desarrollado y con respecto al uso de su Terminal.
+➔ Comando “infosis”: Muestra información sobre el sistema donde
+
+se está ejecutando la terminal. Debe mostrar la información de
+qué usuarios se encuentran logeados, la memoria ram, la
+arquitectura, y la versión del sistema operativo.
+➔ Dos comandos distintos que den fecha y hora,
+Respectivamente.
+➔ Un comando que busque un archivo en específico en un
+directorio en particular. Debe recibir dos argumentos: el archivo
+a buscar y el directorio en donde se va a buscar.
+➔ Un comando que muestre los créditos de los programadores.
+• Van a programar un juego que se pueda jugar en la terminal, de
+forma textual. Se recomienda que sea ahorcado y gato (de dos
+jugadores), pero pueden elegir los que ustedes gusten, mientras sea
+del mismo nivel de complejidad que los dos juegos antes
+mencionados. La interfaz de estos juegos lucirá como ustedes gusten.
+• Van a hacer un reproductor mp3 llamado “prebeplayer”. La interfaz
+gráfica de este reproductor es de diseño libre, aunque debe incluir al
+menos una manera para navegar sobre la biblioteca musical, un área
+que muestre el status actual de la reproducción y una sección que
+indique al usuario cómo utilizar el programa.
+
+Especificaciones extra:
+• Su script debe correr sobre el shell bash.
+• Para hacer el prebeplayer, ustedes requerirán del programa mpg123, y
+harán la programación de esta parte basados en comandos para mpg123.
+Sin embargo, al principio de la ejecución de la terminal, esta debe revisar si
+el programa está instalado y realizar la instalación si es que el usuario no lo
+tiene. Si está instalado, simplemente no se muestra nada al inicio de la
+ejecución de la terminal. Extra
+• En todo momento se deberá proporcionar una línea editable para
+trabajar. Es decir, el usuario debe de poder usar las flechas izquierda y
+derecha del teclado para poder editar lo que escribió. Extra
+• La funcionalidad es lo más importante, pero el diseño importa mucho y se
+contará para la calificación final. Por eso, es necesario que su interfaz
+contenga letras de colores.
+• Pueden ejecutar su script principal como super-usuario, pero se otorgará
+un punto extra a quien pueda hacer toda la funcionalidad del script sin
+necesidad de ser super-usuario.
+• Es MUY recomendado que tengan cada uno de sus comandos
+programados en un archivo .sh distinto. Sobre todo por el prebeplayer y los
+juegos.
+• Para aquellos programas que así lo requieran deberán manejar archivos
+de configuración, por ejemplo, para el reproductor musical se necesita que
+en este archivo de configuración se indique la carpeta donde el usuario
+tenga su música.
+• Todo su sistema deberá ser capaz de trabajar con archivos que lleven
+espacios en sus nombres, las canciones por ejemplo, un formato similar a
+este: “/home/usuario/Musica/The Beatles/Abbey Road/01 Come
+Together.mp3”. Extra
+
+Este proyecto se realizará en parejas, como fueron asignadas.
+• No pueden utilizar comandos que estén por obvias razones no permitidos,
+por ejemplo, no usarán tree para su implementación de “arbol” ni otro shell
+para la implementación de su intérprete de comandos. Los comandos y
+juegos deben estar programados en shell script, no se permite lanzar un
+archivo compilado de c con un juego, o cosas por el estilo.
+● La fecha límite de entrega del proyecto es . El Último
+commit puede ser máximo hasta las 23:59 del 13 Noviembre del 2020.
+• La revisión personal a cada equipo será sobre un GNU/LINUX que está
+basado en Debian.
